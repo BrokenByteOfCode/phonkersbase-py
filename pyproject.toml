@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phonkersbase"
+version = "0.2.0"
+description = "A Python client for the PhonkersBase API"
+readme = "README.md"
+authors = [
+    {name = "BrokenByteOfCode", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "requests>=2.25.0",
+    "cachetools>=4.2.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/BrokenByteOfCode/phonkersbase-py"
+Repository = "https://github.com/BrokenByteOfCode/phonkersbase-py"
+Documentation = "https://github.com/BrokenByteOfCode/phonkersbase-py#readme"
+
+[tool.setuptools]
+packages = ["phonkersbase"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.10.0",
+    "black>=20.8b1",
+    "isort>=5.0.0",
+    "mypy>=0.800",
+    "twine>=3.4.1",
+    "build>=0.7.0"
+]
