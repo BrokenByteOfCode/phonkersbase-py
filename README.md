@@ -76,7 +76,7 @@ The library uses the `PhonkersBaseException` class for error handling:
 
 ```python
 try:
-    artists = phonkerbase.search_artists("phonk")
+    artists = phonkerbase.search_artists("archez")
 except PhonkersBaseException as e:
     print(f"API Error: {e}")
 ```
